@@ -1,0 +1,125 @@
+/* Global Reset and Font Setup */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element width and height */
+}
+
+html, body {
+    user-select: none;
+    background-color: #f5f5f5; /* Light background for overall site */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    color: #000000; /* Default text color */
+    font-family: "Source Sans 3", sans-serif; /* Font from Google Fonts */
+}
+
+/* Remove Margins */
+.post-engagement p {
+    margin-bottom: 0; /* Ensure there's no bottom margin on the post engagement paragraph */
+}
+
+.author-info h2, 
+.author-info h3 {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Typography */
+.author-name,
+.like-count,
+.comment-username {
+    font-size: 13px; /* Set text size */
+    font-weight: 700; /* Bold text for emphasis */
+    line-height: 16px; /* Maintain text readability */
+}
+
+.author-location {
+    font-size: 12px; /* Slightly smaller for location */
+    font-weight: 400; /* Normal font weight */
+    line-height: 15px; /* Line height for location */
+}
+
+.comment-text {
+    font-size: 13px; /* Match size with comment-username */
+    font-weight: 400; /* Regular font weight */
+    line-height: 16px; /* Line height for comments */
+}
+
+/* Layout */
+header,
+.post {
+    background-color: #fff;
+}
+
+main,
+header {
+    width: 375px; /* Container width, common mobile size */
+    margin: 0 auto; /* Center the container */ 
+    display: flex; 
+    flex-direction: column; /* Stack items vertically */
+}
+
+header {
+    padding: 17px 15px; /* Padding around the header */
+    border-bottom: 1px solid #C6C6C6; /* Light border to separate header */
+}
+
+nav {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and user avatar */
+    align-items: center; /* Vertically center the elements */
+}
+
+.author-info {
+    padding: 11px; /* Space around the author info */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    gap: 7px; /* Space between the author avatar and text */
+}
+
+.icon-container {
+    padding: 20px 10px 0; /* Padding around icon section */
+}
+
+.post-engagement {
+    padding: 0 13px 16px; /* Padding around engagement section */
+}
+
+.post {
+    margin-bottom: 25px;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Make images responsive */
+    vertical-align: middle; /* Align images with text */
+}
+
+.logo {
+    width: 127px; /* Set width for logo */
+}
+
+.user-avatar,
+.author-avatar {
+    width: 34px; /* Size for avatars */
+    border-radius: 50%; /* Make avatars circular */
+}
+
+.post-img {
+    width: 100%; /* Post image takes full width of container */
+}
+
+/* Icon Styles */
+.icon {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 23px; /* Size for icons */
+    margin-right: 20px; /* Space between icons */
+}
+
+.icon-heart-liked {
+    filter: invert(27%) sepia(94%) saturate(3733%) hue-rotate(349deg) brightness(91%) contrast(106%);
+}
+
+.icon:hover {
+    opacity: 0.4; /* Change opacity on hover */
+}
